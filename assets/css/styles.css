@@ -1,0 +1,108 @@
+:root{
+    --font: 'Monserrat', sans-serif;
+    --background-percent: #fc0000;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: var(--font);
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3rem;
+}
+
+.card .image img.img{
+    width: 25rem;
+    border-radius: 8%;
+}
+
+.discount-price {
+    display: flex;
+    position: absolute;
+    margin-top: -22.5rem;
+    
+}
+
+.discount-price .icon img {
+    border-radius: 100%;
+    margin-left: -9rem;
+    margin-top: 0.09rem;
+
+}
+
+.discount-price .percent p{
+    margin-top: 0.7rem;
+    background-color: var(--background-percent);
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 19rem;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.contenido h2{
+    background-color: var(--background-percent);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-top: 0.8rem;
+    padding-bottom: 1.7rem;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    width: 23.5rem;
+    height: 1.5rem;
+    position: absolute;
+    margin-top: -2rem;
+    margin-left: 0.6rem;
+}
+
+.contenido p.text{
+    margin-top: 1rem;
+    position: absolute;
+    margin-right: 30.5rem;
+    margin-left: 1.6rem;
+    font-size: 18px;
+}
+
+.contenido .price .price-total{
+    position: absolute;
+    margin-top: 4.5rem;
+    margin-left: 1.6rem;
+    color: red;
+    font-size: 15px;
+}
+
+.contenido .price .price-total strong.now{
+    color: black;
+    font-size: 20px;
+}
+
+.contenido .price .price-total .separator{
+    font-size: 30px;
+}
+
+.contenido .price .price-total button{
+    background-color: var(--background-percent);
+    color: white;
+    border: none;
+    width: 6.5rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    font-size: 18px;
+}
