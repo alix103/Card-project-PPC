@@ -1,7 +1,19 @@
-:root{
-    --font: 'Monserrat', sans-serif;
-    --background-percent: #fc0000;
+@font-face {
+    font-family: product;
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
 
+@font-face {
+    font-family: text;
+    src: url(../fonts/Raleway-Medium.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root{
+    --background-percent: #fc0000;
 }
 
 *{
@@ -11,7 +23,7 @@
 }
 
 body{
-    font-family: var(--font);
+    font-family: product;
 }
 
 section{
@@ -19,38 +31,67 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -3rem;
+    margin-top: 3rem;
+}
+
+section .promo{
+    margin-top: -30rem;
+    margin-left: -50rem;
+    position: absolute;
+    display: flex;
+}
+
+section .promo h2{
+    margin-top: -2rem;
+    background-color: var(--background-percent);
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 50px;
+    margin-left: -15rem;
+    border-radius: 10px;
+
+}
+
+section .promo img{
+    border-radius: 100%;
+    margin-left: -1.3rem;
+    margin-top: -2.2rem;
+}
+
+.card{
+    margin-top: 8rem;
 }
 
 .card .image img.img{
-    width: 25rem;
+    width: 20rem;
     border-radius: 8%;
 }
 
 .discount-price {
     display: flex;
     position: absolute;
-    margin-top: -22.5rem;
-    
+    margin-top: -18rem; 
 }
 
 .discount-price .icon img {
     border-radius: 100%;
-    margin-left: -9rem;
-    margin-top: 0.09rem;
-
+    margin-left: -8rem;
+    margin-top: 0.2rem;
+    width: 50px;
 }
 
 .discount-price .percent p{
     margin-top: 0.7rem;
     background-color: var(--background-percent);
     color: white;
-    padding: 10px;
+    padding: 8px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: 19rem;
-    font-size: 16px;
-    font-weight: 700;
+    margin-left: 14.4rem;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: text;
 }
 
 
@@ -74,10 +115,11 @@ section{
 
 .contenido p.text{
     margin-top: 1rem;
-    position: absolute;
+    position: relative;
     margin-right: 30.5rem;
     margin-left: 1.6rem;
     font-size: 18px;
+    font-family: text;
 }
 
 .contenido .price .price-total{
@@ -105,4 +147,5 @@ section{
     height: 2.5rem;
     border-radius: 8px;
     font-size: 18px;
+    font-family: text;
 }
