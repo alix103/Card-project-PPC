@@ -65,11 +65,6 @@
     transition: all 0.25;
 }
 
-/*.container .card:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px var(--colorshadow);
-}*/
-
 .discount-price {
     display: flex;
     position: absolute;
@@ -105,6 +100,27 @@
     cursor: pointer;
 }
 
+.image p.hidden{
+    margin: auto;  
+    color: #fff;
+    text-align: center;
+    width: 300px;
+    height: 150px;
+    padding-top: 145px;
+    border-radius: 8%;
+    background: var(--background-percent);
+    transition: opacity .4s linear;
+    cursor: pointer;  
+    position: absolute;
+    margin-top: 0.001rem;
+    margin-left: 1rem;
+    opacity: 0;
+}
+
+.image p.hidden:hover{
+    opacity: 0.75; 
+}
+
 .container h4{
     background-color: var(--background-percent);
     border-top-left-radius: 9px;
@@ -136,15 +152,15 @@
 .container .price .price-total{
     position: absolute;
     margin-top: 1rem;
-    margin-left: 1.6rem;
+    margin-left: 2.5rem;
     color: red;
-    font-size: 12px;
+    font-size: 11.5px;
     font-family: text;
 }
 
 .container .price .price-total strong.now{
     color: black;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .container .price .price-total .separator{
@@ -155,10 +171,10 @@
     background-color: var(--background-percent);
     color: white;
     border: none;
-    width: 6rem;
+    width: 4.5rem;
     height: 2rem;
-    border-radius: 8px;
-    font-size: 17px;
+    border-radius: 5px;
+    font-size: 15px;
     font-family: text;
     cursor: pointer;
 }
