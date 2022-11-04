@@ -16,57 +16,59 @@
     --background-percent: #fc0000;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box; 
-}
-
-body{
+* {
+    margin: 0px;
+    padding: 0px;
     font-family: product;
 }
 
-section{
-    height: 100vh;
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
+    margin: auto;
 }
 
-section .promo{
-    margin-top: -30rem;
-    margin-left: -50rem;
-    position: absolute;
+.promo{
+    margin-top: 1.5rem;
+    margin-left: 5rem;
+    position: relative;
     display: flex;
 }
 
-section .promo h2{
-    margin-top: -2rem;
+.promo h2{
+    margin-top: 0.5rem;
     background-color: var(--background-percent);
     color: white;
     padding: 10px;
     padding-left: 15px;
     padding-right: 50px;
-    margin-left: -15rem;
     border-radius: 10px;
-
 }
 
-section .promo img{
+.promo img{
     border-radius: 100%;
-    margin-left: -1.3rem;
-    margin-top: -2.2rem;
+    margin-left: -2rem;
+    margin-top: 0.2rem;
 }
 
-.card{
-    margin-top: 8rem;
+
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25;
 }
 
-.card .image img.img{
-    width: 20rem;
-    border-radius: 8%;
-}
+/*.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px var(--colorshadow);
+}*/
 
 .discount-price {
     display: flex;
@@ -76,76 +78,87 @@ section .promo img{
 
 .discount-price .icon img {
     border-radius: 100%;
-    margin-left: -8rem;
-    margin-top: 0.2rem;
-    width: 50px;
+    margin-left: -11.5rem;
+    margin-top: 0.3rem;
+    width: 40px;
+    
 }
 
 .discount-price .percent p{
     margin-top: 0.7rem;
     background-color: var(--background-percent);
     color: white;
-    padding: 8px;
+    padding: 6px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: 14.4rem;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     font-family: text;
 }
 
 
-.contenido h2{
-    background-color: var(--background-percent);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    padding-top: 0.8rem;
-    padding-bottom: 1.7rem;
-    font-size: 17px;
-    color: white;
-    text-align: center;
-    width: 23.5rem;
-    height: 1.5rem;
-    position: absolute;
-    margin-top: -2rem;
-    margin-left: 0.6rem;
+.container .card .image img.pro{
+    width: 300px;
+    height: 295px;
+    border-radius: 8%;
+    cursor: pointer;
 }
 
-.contenido p.text{
+.container h4{
+    background-color: var(--background-percent);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    padding-top: 0.55rem;
+    padding-bottom: 0.2rem;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    width: 16.5rem;
+    height: 1.5rem;
+    position: absolute;
+    margin-top: -1.5rem;
+    margin-left: 2rem;
+
+}
+
+.container .card .text{
     margin-top: 1rem;
     position: relative;
-    margin-right: 30.5rem;
+    text-align: left;
+    font-size: 13px;
+    font-family: text;
+    margin-left: 2.5rem;
+}
+
+.container .price .price-total{
+    position: absolute;
+    margin-top: 1rem;
     margin-left: 1.6rem;
-    font-size: 18px;
+    color: red;
+    font-size: 12px;
     font-family: text;
 }
 
-.contenido .price .price-total{
-    position: absolute;
-    margin-top: 4.5rem;
-    margin-left: 1.6rem;
-    color: red;
+.container .price .price-total strong.now{
+    color: black;
     font-size: 15px;
 }
 
-.contenido .price .price-total strong.now{
-    color: black;
-    font-size: 20px;
+.container .price .price-total .separator{
+    font-size: 18px;
 }
 
-.contenido .price .price-total .separator{
-    font-size: 30px;
-}
-
-.contenido .price .price-total button{
+.container .price .price-total button{
     background-color: var(--background-percent);
     color: white;
     border: none;
-    width: 6.5rem;
-    height: 2.5rem;
+    width: 6rem;
+    height: 2rem;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 17px;
     font-family: text;
+    cursor: pointer;
 }
